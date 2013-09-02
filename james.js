@@ -21,6 +21,7 @@ $(document).ready(function() {
         }
     });
 
+//removes 'enable javascript' message for all but non-js enabled users
 	$('#no-script').remove();
 		 
 	
@@ -57,8 +58,8 @@ $(document).ready(function() {
 	}, 900);
 
 //collapse&expand celeb info on click	
-	$('#bio div').hide();
-	$('#bio div:first').show();
+	$('#bio div').hide('puff');
+	$('#bio div:first').show('blind');
 		
 	$('#bio h4').click(function() {
 	  $(this).next().toggle('slow');
